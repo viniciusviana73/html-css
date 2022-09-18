@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+
+        #   =   id
+        .   =   class
+        :   =   pseudo-class
+        ::  =   pseudo-element
+        >   =   children
+
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            margin-left: 2em;
+        }
+
+        p {
+            color: darkred;
+            font-weight: bolder;
+            font-size: 0.9em;
+            text-align: right;
+            margin-top: 2em;
+            margin-right: 5em;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul {
+            margin-left: 3em;
+        }
+
+        a:visited {
+            color:darkred
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: goldenrod;
+        }
+
+        a::after {
+            content: ' ✓';
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        a::before {
+            content: '☞ ';
+        }
+
+        .especial {
+            background-color: rgb(221, 135, 135)
+        }
+
+        #externalLink {
+            color:#568800;
+        }
+
+        #externalLink::before {
+            content: '☯ ';
+        }
+
+        #externalLink::after {
+            content: ' ☯';
+        }
+
+        #textPaint {
+            color: #568800;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li>
+            <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório GitHub</a>
+        </li>
+        <li>
+            <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external" class="especial">Canal do YouTube</a>
+        </li>
+        <li>
+            <a href="https://www.cursoemvideo.com" target="_blank" rel="external">Site do CursoemVideo</a>
+        </li>
+    </ul>
+    <p>
+        O '☞ ' está no 'content' do seletor de pseudo-elemento a::before. <br>
+        O ' ✓' está no 'content' do seletor de pseudo-elemento a::after. <br>
+        O segundo <a id="externalLink" href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">link</a> está com background-color, pois é da class "especial". <br>
+    </p>
+    <p>
+        O link acima está <scan id="textPaint">verde</scan>, pois foi settado um id para ele. Portanto ele herdou as configurações de &lt;a&gt; globais, que logo foram sobrescritas. <br>
+        As novas configurações são as configurações para o seletor de id #externalLink.
+    </p>
+    <p>
+        As margens das listas (&lt;ul&gt;), do título (&lt;h1&gt;) e dos parágrafos (&lt;p&gt;) foram alteradas, causando o espaçamento entre as extremidades.
+    </p>
+</body>
+</html>

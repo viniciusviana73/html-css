@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark{
+            background-color:lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase, tempos um <b>termo em negrito</b> usando a tag &lt;b&gt;. (Não semântica).</p>
+    <p>Nesta frase, temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt;. (Semântica).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (Não semântica).</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (Semântica).</p>
+    <h2>Texto Marcado / Destacado</h2>
+    <p>Nesta frase, temos um  <mark>termo em mark</mark> usando a tag &lt;mark&gt;.</p>
+    <p>Nesta frase, temos outro <mark>texto marcado</mark>.</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto deletado</del> para indicar que ele deve ser lido, mas não considerado, utilizando a tag &lt;del&gt;  (Semântica).</p>
+    <p>Nesta frase, temos um <strike>termo deletado</strike>, utilizando a tag &lt;strike&gt; (Não semântica).</p>
+    <h2>Texto Inserido / Sublinhado</h2>
+    <p>Podemos marcar um <ins>texto sublinhado</ins> para dar uma ênfase e indicar que ele foi adicionado depois, utilizando a tag &lt;ins&gt; (Semântica).</p>
+    <p>Nesta frase, temos um <u>termo sublinhado</u>, utilizando a tag &lt;u&gt; (Não semântica).</p>
+    <h2>Texto com abreviação</h2>
+    <p>Nesta frase, temos o termo <abbr title="Hyper Text Markup Language">HTML</abbr> (abreviado) utilizando a tag &lt;abbr&gt;. Passe o mouse sobre ele.</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3.</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O.</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.</p>
+    <h2>Texto em &lt;code&gt;</h2>
+    <h3>Exemplo de código em Python</h3>
+    <pre><code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é par)
+        else:
+            print(f'O número {num} é impar)
+        print('FIM DO PROGRAMA')
+    </code></pre> 
+    <!--A tag <pre> mantém a pré-formatação do texto, para que seja lido exatamente da forma que foi escrito, incluindo quebras de linhas, por exemplo.-->
+</body>
+</html>

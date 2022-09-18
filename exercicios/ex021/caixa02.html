@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Crimson+Text&family=Libre+Baskerville:wght@700&family=Oswald:wght@200;400&display=swap');
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        h1 {
+            font-family: 'Crimson Text', serif;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 20px 10px;
+            border-radius: 10px 20px;
+            box-shadow: 3px 2px 5px 1px #00000070;
+        }
+
+        nav {
+            background-color: #4b4b4b;
+            padding: 3px;
+            box-shadow: 3px 2px 10px 1px #00000070;
+            border-radius: 2px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: #51ff00c5;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 7px 10px 10px 60px;
+            box-shadow: 3px 1px 9px 2px #00000070;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            box-shadow: 0px 0px 5px 1px #00000070;
+            border: solid 1px #00000060;
+            margin: 10px 50px;
+            border-radius: 3px;
+        }
+
+        article > aside {
+            background-color: #96969688;
+            text-align: right;
+            font-family: 'Crimson Text', serif;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        article > aside > p {
+            margin-right: 20px;
+        }
+
+        article > p {
+            text-align: justify;
+            font-family: 'Crimson Text', serif;
+        }
+
+        article > h2 {
+            text-align: center;
+            font-family: 'Aboreto', cursive;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 20px 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        .videos {
+            text-align: center;
+            padding: 10px;
+        }
+
+        /*div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 50%;
+        }*/
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, dolores cupiditate iste magnam repellendus nihil ratione. Excepturi doloremque voluptatem debitis in, suscipit incidunt impedit laboriosam. Rem quibusdam iusto neque deserunt numquam, consequuntur dolor quisquam atque sed impedit exercitationem dolore sapiente. Voluptatem ab nesciunt fugit hic esse beatae corrupti officia similique. Praesentium quisquam quam accusamus iure dicta cupiditate iusto aperiam vel eum eligendi temporibus, aut obcaecati, magnam possimus distinctio eius earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sit nostrum modi cumque iste iure, architecto officia delectus quas quibusdam.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+            <article>
+                <h2>Notícia sobre o Brasileirão</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, nisi. Maxime placeat, animi fugit reprehenderit, eveniet dolore voluptas id quidem architecto delectus adipisci quod officiis! Cupiditate quos sunt possimus doloribus ipsum ducimus vero laborum neque iure dignissimos, dolorem corporis dolore assumenda ad, laboriosam necessitatibus esse quod beatae nisi odio. Debitis, sapiente odio sequi aliquid fugiat aperiam alias explicabo? <br>
+                    <div class="videos"><iframe width="265" height="150" src="https://www.youtube.com/embed/WU1Vum9cDbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </p>
+                <aside>
+                    <p>Artigo escrito por Sueli Barroso</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido nas aulas do CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
