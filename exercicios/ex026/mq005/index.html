@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="changeSize()">
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="menuItems">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -28,5 +31,6 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laboriosam dicta alias ratione aut voluptatibus quod! Rem, quibusdam? Dolore dicta fugit, quibusdam similique et molestias illum sed maxime nulla reprehenderit perspiciatis enim eaque in assumenda velit, aliquid molestiae quas architecto itaque adipisci quam. Maiores, et doloribus ratione quo doloremque dicta obcaecati deleniti sunt minima laboriosam ut provident alias, atque quas nisi consectetur iure temporibus veritatis animi maxime amet illo. Quisquam.</p>
         </article>
     </main>
+    <script src="script/script.js"></script>
 </body>
 </html>
